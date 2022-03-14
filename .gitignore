@@ -3,3 +3,4 @@ dist
 .next
 tsconfig.tsbuildinfo
 .rollup.cache
+.DS_Store 
