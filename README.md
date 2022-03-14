@@ -8,6 +8,10 @@ Tiny library (5kb zipped) that let's you focus on building Web3 features. Suppor
 
 ## usage
 
+```bash
+yarn add wen-connect
+```
+
 Wen works in all Javascript applications but offers different bindings for different frameworks.
 
 ### React
