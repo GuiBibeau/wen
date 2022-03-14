@@ -1,0 +1,5 @@
+docs
+src
+rollup.config.js
+.rollup.cache
+tsconfig.tsbuildinfo
