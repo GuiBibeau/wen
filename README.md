@@ -10,6 +10,8 @@ Tiny library (5kb zipped) that let's you focus on building Web3 features. Suppor
 
 ```bash
 yarn add wen-connect
+# or
+npm install wen-connect --save
 ```
 
 Wen works in all Javascript applications but offers different bindings for different frameworks.

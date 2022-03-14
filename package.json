@@ -1,6 +1,6 @@
 {
   "name": "wen-connect",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
