@@ -4,7 +4,7 @@
 [![Build Size](https://img.shields.io/bundlephobia/minzip/wen-connect?label=bundle%20size&style=flat&colorA=000000&colorB=000000)](https://bundlephobia.com/result?p=wen-connect)
 [![Downloads](https://img.shields.io/npm/dt/wen-connect.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/wen-connect)
 
-Tiny library under 5kb zipped that let's you focus on building Web3 features. Supports connecting to metamask and many other features soon.
+Tiny library (5kb zipped) that let's you focus on building Web3 features. Supports connecting to metamask and many other features soon.
 
 ## usage
 
