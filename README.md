@@ -79,6 +79,9 @@ Create a `pages/api/wen.tsx` for wen to use JWT sessions:
 export { WenConnect as default } from "wen-connect";
 ```
 
+Add a WEN_SECRET environment variable in your `.env` file. It will be used to encrypt the JWT token.
+
+
 Now you should have access to the address in [getServerSideprops](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props).
 
 ```ts
