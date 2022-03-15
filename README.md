@@ -26,8 +26,7 @@ Add `WenProvider` to your root component
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-
-const supabase = createClient("supabase-url", "supabase-anon-key");
+import { WenProvider } from "wen-connect";
 
 ReactDOM.render(
   <React.StrictMode>
