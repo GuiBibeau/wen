@@ -1,10 +1,13 @@
 import type { SsrTransport } from "../models";
 
 export const ssrTransport: SsrTransport = {
-  setToken: (address: string) => {
-    fetch("/api/wen", {
+  setToken: async (address, session) => {
+    await fetch("/api/wen", {
       method: "POST",
-      body: JSON.stringify({ wallet: address }),
+      body: JSON.stringify({
+        wallet: address,
+        ...(typeof session !== "undefined" && session),
+      }),
     });
   },
   removeToken: () => {

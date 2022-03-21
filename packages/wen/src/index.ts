@@ -1,3 +1,3 @@
 export * from "./core";
-export * from "./react-provider";
-export * from "./next.js";
+export * from "./providers/reactProvider";
+export * from "./providers/nextProvider";

@@ -1,16 +1,17 @@
 {
   "name": "wen-connect",
-  "version": "1.0.20",
-  "private": false,
+  "version": "1.1.1-beta.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "rollup -c",
     "dev": "next dev docs",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "docs": "next dev docs",
+    "build:docs": "next build docs"
   },
   "dependencies": {
-    "jwt-simple": "^0.5.6",
     "valtio": "^1.3.1"
   },
   "peerDependencies": {
@@ -18,6 +19,7 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@metamask/types": "^1.1.0",
     "@rollup/plugin-typescript": "^8.3.1",
     "@swc/core": "^1.2.154",
     "@types/express-jwt": "^6.0.4",

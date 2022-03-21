@@ -1,24 +1,33 @@
-export type WalletTransportType = "injected" | "walletConnect";
+export type WalletTransportType = "injected";
 
-export type WalletTransport = {
-  name: WalletTransportType;
-  requestAccounts: () => Promise<string[]>;
-  listen: (handler: (accounts: string[]) => void) => void;
+export type SerializableSession = Record<string, any>;
+
+export type WenSession = SerializableSession & {
+  wallet: Wallet;
 };
 
 export type CacheTransport = {
-  serialize: (wallet: Wallet) => void;
+  serialize: (wallet: Wallet, session?: SerializableSession) => void;
   deserialize: () => Wallet;
 };
 
 export type SsrTransport = {
-  setToken: (wallet: string) => void;
+  setToken: (wallet: Wallet, session?: SerializableSession) => Promise<void>;
   removeToken: () => void;
 };
 
+/**
+ * address: string;
+ */
 export type Wallet = {
   address: string;
-  balance: number;
+  balance: string;
   connected: boolean;
   connector: WalletTransportType | null;
+  chainId: string;
+};
+
+export type WenConfig = {
+  ssr: boolean;
+  endpoint: string;
 };

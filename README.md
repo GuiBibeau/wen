@@ -64,6 +64,8 @@ const { address } = useWen();
 Wen also works in SSR with Next.js to let you connect. Activate the ssr prop in the provider and add your provider to [`_app.tsx`](https://nextjs.org/docs/advanced-features/custom-app):
 
 ```tsx
+import { WenProvider } from "wen-connect";
+
 function MyApp({ Component, pageProps }) {
   return (
     <WenProvider ssr>
@@ -81,7 +83,6 @@ export { WenConnect as default } from "wen-connect";
 
 Add a WEN_SECRET environment variable in your `.env` file. It will be used to encrypt the JWT token.
 
-
 Now you should have access to the address in [getServerSideprops](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props).
 
 ```ts
@@ -91,15 +92,16 @@ import { useWen } from "wen-connect";
 import { getSession } from "wen-connect";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const serverAddress = await getSession(context);
+  const { address } = await getSession(context);
 
   // fetch some data to display based on user address
 
-return {
+  return {
     props: {
-        /// your data
-    }
-}
+      /// your data
+    },
+  };
+};
 ```
 
 ## Roadmap:

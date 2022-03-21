@@ -6,8 +6,8 @@ export default {
   output: [
     {
       dir: "dist",
-      format: "cjs",
-      //   sourceMap: true,
+      format: "es",
+      sourceMap: true,
     },
   ],
   plugins: [typescript(), uglify()],

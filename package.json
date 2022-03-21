@@ -1,7 +1,19 @@
 {
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "docs/"
   ],
   "private": true,
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "docs": "yarn workspace docs dev",
+    "build:docs": "yarn workspace docs build",
+    "build": "yarn workspace wen-connect build",
+    "dev": "yarn workspace wen-connect start"
+  },
+  "devDependencies": {
+    "next": "12.1.1-canary.8",
+    "react": "18.0.0-rc.1",
+    "react-dom": "18.0.0-rc.1"
+  }
 }
