@@ -98,7 +98,7 @@ function MyApp({ Component, pageProps }) {
 }
 ```
 
-Create a `pages/api/wen.tsx` for Wen to use JWT sessions:
+Create a `pages/api/wen.ts` for Wen to use JWT sessions:
 
 ```tsx
 export { WenConnect as default } from "wen-connect";
