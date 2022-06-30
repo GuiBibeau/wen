@@ -1,5 +1,7 @@
 ## Wen Connect? Now!
 
+I am currently rewritting all of this to work better in React 18 and come with a optional UI kit
+
 [![Version](https://img.shields.io/npm/v/wen-connect?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/wen-connect)
 [![Build Size](https://img.shields.io/bundlephobia/minzip/wen-connect?label=bundle%20size&style=flat&colorA=000000&colorB=000000)](https://bundlephobia.com/result?p=wen-connect)
 [![Downloads](https://img.shields.io/npm/dt/wen-connect.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/wen-connect)
